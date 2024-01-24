@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+    
+<div class="container-md">
+<h1>공지사항</h1>
+<div>
+<form action="/board/list" method="get">
+
+</form>
+</div>
+
+
+<br>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">title</th>
+      <th scope="col">writer</th>
+      <th scope="col">reg_date</th>
+      <th scope="col">readCount</th>
+    </tr>
+  </thead>
+  <tbody>
+  	<th:block th:each="bvo:${list}">
+    <tr>
+      <th scope="row">${bvo.bno }</th>
+      <td><a href="/board/detail?bno=${bvo.bno }">${bvo.title }</a>
+      <h6 class="badge bg-secondary">댓글: ${bvo.cmtQty }</h6> 
+       <h6 class="badge bg-secondary">파일: ${bvo.hasFile }</h6> 
+      </td>
+      <td>${bvo.writer }</td>
+      <td>${bvo.regAt }</td>
+      <td>${bvo.readCount }</td>
+    </tr>
+  	</th:block>
+  </tbody>
+</table>
+
+<!--paging line만들기  -->
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+  <!--이전  -->
+   <c:if test="${ph.prev }">
+    <li class="page-item">
+      <a class="page-link" href="/board/list?pageNo=${ph.startPage-1 }&qty=${ph.pgvo.qty}&type=${ph.pgvo.type}&keyword=${ph.pgvo.keyword}" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    </c:if>
+    <!--페이지번호  -->
+   <c:forEach begin="${ph.startPage }" end="${ph.endPage }" var="i">
+    <li class="page-item"><a class="page-link" href="/board/list?pageNo=${i }&qty=${ph.pgvo.qty}&type=${ph.pgvo.type}&keyword=${ph.pgvo.keyword}">${i }</a></li>
+    </c:forEach>
+    <!-- 다음 -->
+    <c:if test="${ph.next }">
+    <li class="page-item">
+      <a class="page-link" href="/board/list?pageNo=${ph.endPage+1 }&qty=${ph.pgvo.qty}&type=${ph.pgvo.type}&keyword=${ph.pgvo.keyword}" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+    </c:if>
+    <li class="page-item">
+      <a class="page-link" href="/board/list">
+        <span aria-hidden="true">전체보기</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+</div>
+<script>
+	const isDel = `<c:out value="${isDel}" />`;
+	if(isDel == 1){
+		alert("게시글이 삭제 되었습니다.");
+	}
+</script>
+
+<jsp:include page="../layout/footer.jsp"></jsp:include>
+</html>

@@ -1,0 +1,6 @@
+
+1월 24, 2024 13:28:35.64 NEW SESSION
+1월 24, 2024 13:28:35.66 [8728:13712:0124/132835.638:ERROR:device_event_log_impl.cc(192)] [13:28:35.639] Bluetooth: bluetooth_adapter_winrt.cc:1058 Getting Default Adapter failed.
+1월 24, 2024 14:14:34.64 [8728:13712:0124/141434.640:ERROR:device_event_log_impl.cc(192)] [14:14:34.640] Bluetooth: bluetooth_adapter_winrt.cc:1058 Getting Default Adapter failed.
+1월 24, 2024 14:28:11.11 [8728:13712:0124/142811.112:ERROR:sharing_service.cc(250)] Device un-registration failed with fatal error
+1월 24, 2024 14:52:19.32 [8728:13712:0124/145219.325:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost

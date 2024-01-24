@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<th:block th:replace="~{/layout :: setFragment(~{this::content})}">
+	<th:block th:fragment="content">
+	
+	</th:block>
+</th:block>
