@@ -4,3 +4,5 @@
 1월 24, 2024 14:14:34.64 [8728:13712:0124/141434.640:ERROR:device_event_log_impl.cc(192)] [14:14:34.640] Bluetooth: bluetooth_adapter_winrt.cc:1058 Getting Default Adapter failed.
 1월 24, 2024 14:28:11.11 [8728:13712:0124/142811.112:ERROR:sharing_service.cc(250)] Device un-registration failed with fatal error
 1월 24, 2024 14:52:19.32 [8728:13712:0124/145219.325:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+1월 24, 2024 14:59:26.07 [8728:13712:0124/145926.072:ERROR:device_event_log_impl.cc(192)] [14:59:26.071] Bluetooth: bluetooth_adapter_winrt.cc:1058 Getting Default Adapter failed.
+1월 24, 2024 15:15:33.64 [8728:13712:0124/151533.646:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost

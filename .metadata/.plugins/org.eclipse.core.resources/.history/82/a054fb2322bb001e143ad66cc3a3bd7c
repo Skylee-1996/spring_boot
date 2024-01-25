@@ -1,0 +1,19 @@
+package com.example.demo.Handler;
+
+import com.example.demo.domain.PagingVO;
+
+public class PagingHandler {
+	private int startPage;
+	private int endPage;
+	private boolean prev, next;
+	
+	private int totalCount;
+	private PagingVO pgvo;
+	
+	public PagingHandler(PagingVO pgvo, int totalCount) {
+		this.pgvo=pgvo;
+		this.totalCount = totalCount;
+		
+		this.endPage = (int)Math.ceil(pgvo.getPageNo() / (double)pgvo.getQty()) * pgvo.getQty();
+	}
+}

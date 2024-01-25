@@ -3,17 +3,20 @@ package com.example.demo.service;
 import java.util.List;
 
 import com.example.demo.domain.BoardVO;
+import com.example.demo.domain.PagingVO;
 
 public interface BoardService {
 
 	int register(BoardVO bvo);
 
-	List<BoardVO> getList();
+	List<BoardVO> getList(PagingVO pgvo);
 
 	BoardVO getDetail(long bno);
 
 	int update(BoardVO bvo);
 
 	int delete(long bno);
+
+	int getTotal(PagingVO pgvo);
 
 }

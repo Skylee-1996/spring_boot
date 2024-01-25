@@ -1,0 +1,10 @@
+package com.example.demo.Handler;
+
+public class PagingHandler {
+	private int startPage;
+	private int endPage;
+	private boolean prev, next;
+	
+	private int totalCOunt;
+	private PagingVO pgvo;
+}
