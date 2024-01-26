@@ -31,7 +31,7 @@ public class CommentController {
 	
 	@PostMapping(value = "/post", consumes = "application/json", produces = MediaType.TEXT_PLAIN_VALUE)
 	public ResponseEntity<String> post(@RequestBody CommentVO cvo){
-		
+		log.info(">>>>cvo >>>{}",cvo);
 		int isOk = csv.post(cvo);
 		
 		return isOk > 0 ? new ResponseEntity<String>("1", HttpStatus.OK) : 

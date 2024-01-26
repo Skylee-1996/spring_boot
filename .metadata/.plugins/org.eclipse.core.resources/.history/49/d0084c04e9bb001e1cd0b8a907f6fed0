@@ -1,0 +1,22 @@
+package com.example.demo.repository;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+
+import com.example.demo.domain.CommentVO;
+
+@Mapper
+public interface CommentMapper {
+
+	List<CommentVO> selectList();
+
+	int countTotal(long bno);
+
+	int updateCvo(CommentVO cvo);
+
+	int delete(long cno);
+
+	int insert(CommentVO cvo);
+
+}

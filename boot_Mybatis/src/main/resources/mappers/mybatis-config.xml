@@ -9,6 +9,7 @@
   	<typeAliases>
   		<!-- 사용할 셩우 사용 -->
   		<typeAlias type="com.example.demo.domain.BoardVO" alias="bvo"/>
+  		<typeAlias type="com.example.demo.domain.CommentVO" alias="cvo"/>
   	</typeAliases>
   	
   </configuration>
