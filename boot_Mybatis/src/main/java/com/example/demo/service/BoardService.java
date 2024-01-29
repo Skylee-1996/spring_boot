@@ -2,16 +2,17 @@ package com.example.demo.service;
 
 import java.util.List;
 
+import com.example.demo.domain.BoardDTO;
 import com.example.demo.domain.BoardVO;
 import com.example.demo.domain.PagingVO;
 
 public interface BoardService {
 
-	int register(BoardVO bvo);
+	int register(BoardDTO boardDTO);
 
 	List<BoardVO> getList(PagingVO pgvo);
 
-	BoardVO getDetail(long bno);
+	BoardDTO getDetail(long bno);
 
 	int update(BoardVO bvo);
 

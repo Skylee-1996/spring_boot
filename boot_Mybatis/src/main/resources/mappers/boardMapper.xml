@@ -25,6 +25,12 @@
   	<select id="getTotal" resultType="int">
   		select Count(bno) from board
   	</select>
+  	
+  	<select id="getBno" resultType="long">
+  		select max(bno) from board
+  	</select>
+  	
+  	
   	<sql id="search">
   		<if test="type != null">
   			 	<trim prefix="where (" suffix=")" suffixOverrides="or">

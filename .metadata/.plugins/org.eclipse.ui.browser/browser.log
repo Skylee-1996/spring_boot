@@ -6,3 +6,18 @@
 1월 24, 2024 14:52:19.32 [8728:13712:0124/145219.325:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
 1월 24, 2024 14:59:26.07 [8728:13712:0124/145926.072:ERROR:device_event_log_impl.cc(192)] [14:59:26.071] Bluetooth: bluetooth_adapter_winrt.cc:1058 Getting Default Adapter failed.
 1월 24, 2024 15:15:33.64 [8728:13712:0124/151533.646:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+1월 29, 2024 09:05:16.30 NEW SESSION
+1월 29, 2024 09:05:16.31 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+1월 29, 2024 11:36:00.69 [11940:2988:0129/113600.698:ERROR:CONSOLE(0)] "ReferenceError: dragEvent is not defined", source:  (0)
+1월 29, 2024 11:37:24.93 [11940:2988:0129/113724.932:ERROR:CONSOLE(0)] "ReferenceError: dragEvent is not defined", source:  (0)
+1월 29, 2024 11:37:26.46 [11940:2988:0129/113726.468:ERROR:CONSOLE(0)] "ReferenceError: dragEvent is not defined", source:  (0)
+1월 29, 2024 12:30:18.79 [11940:2988:0129/123018.795:ERROR:interface_endpoint_client.cc(702)] Message 0 rejected by interface blink.mojom.WidgetHost
+1월 29, 2024 12:30:36.00 [11940:2988:0129/123036.001:ERROR:interface_endpoint_client.cc(702)] Message 0 rejected by interface blink.mojom.WidgetHost
+1월 29, 2024 13:03:50.44 [11940:2988:0129/130350.449:ERROR:interface_endpoint_client.cc(702)] Message 0 rejected by interface blink.mojom.WidgetHost
+1월 29, 2024 13:21:08.82 [11940:2988:0129/132108.824:ERROR:CONSOLE(0)] "ReferenceError: dragEvent is not defined", source:  (0)
+1월 29, 2024 13:58:46.15 [11940:2848:0129/135846.154:ERROR:cert_verify_proc_builtin.cc(705)] CertVerifyProcBuiltin for www.theenglishstudent.com failed:
+1월 29, 2024 13:58:46.15 ----- Certificate i=0 (CN=invalid-sni.invalid,OU=No SNI provided\; please fix your client.) -----
+1월 29, 2024 13:58:46.15 ERROR: No matching issuer found
+1월 29, 2024 13:58:46.15 
+1월 29, 2024 13:58:46.15 

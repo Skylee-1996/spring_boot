@@ -1,0 +1,15 @@
+package com.example.demo.domain;
+
+import java.util.List;
+
+public class BoardDTO {
+	
+	
+	public BoardDTO(BoardVO bvo2, List<FileVO> flist2) {
+		// TODO Auto-generated constructor stub
+	}
+	private BoardVO bvo;
+	private List<FileVO> flist;
+	
+	
+}
