@@ -4,7 +4,7 @@
 	<th:block th:fragment="content">
 		<div class="container-md">
 			<h1>Board Detail Page</h1>
-			<form action="/board/modify" method="post" id="modForm">
+			<form action="/board/modify" method="post" id="modForm" enctype="multipart/form-data">
 			<div class="mb-3">
 				<label for="bno" class="form-label">Bno</label> <input type="text"
 					class="form-control" name="bno" id="bno" th:value="${bdto.bvo.bno }"
@@ -29,7 +29,8 @@
 				<label for="content" class="form-label">Content</label>
 				<textarea class="form-control" id="content" name="content" rows="3"
 					readonly="readonly">[[${bdto.bvo.content }]]
-  </textarea>
+  				</textarea>
+  			</div>
   
   			<!-- 파일 출력 라인  -->
   	<div class="mb-3">
@@ -47,7 +48,15 @@
             </div>
         </li>
     </ul>
-</div>
+    <!-- 새파일 등록 라인  -->
+         <div class="mb-3">
+            <label for="writer">File : </label>
+            <input type="file" class="form-control" id="files" name="files" multiple style="display: none;">
+         </div>   
+         <button type="button" id="trigger" class="btn btn-outline-primary btn-block d-block">Files Upload</button>
+         <div class="col-12" id="fileZone">
+		</div>
+	<input type="hidden" id="regBtn">
 			</div>
 			<button type="button" class="btn btn-primary" id="listBtn">List</button>
 			<!--detail page에서 modify 상태로 변경하기 위한 버튼  -->
@@ -121,6 +130,7 @@
 		
 		<script th:src="@{/js/boardComment.js}"></script>
 		<script th:src="@{/js/boardDetail.js}"></script>
+		<script th:src="@{/js/boardRegister.js}"></script>
 	</th:block>
 </th:block>
 	<script th:inline="javascript">

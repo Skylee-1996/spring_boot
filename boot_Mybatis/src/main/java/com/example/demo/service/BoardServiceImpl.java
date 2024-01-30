@@ -52,9 +52,18 @@ public class BoardServiceImpl implements BoardService {
 		return bdto;
 	}
 
+	@Transactional
 	@Override
-	public int update(BoardVO bvo) {
-		return mapper.update(bvo);
+	public int update(BoardDTO bdto) {
+		int isOk = mapper.update(bdto.getBvo());
+		if(isOk>0 || bdto.getFlist().size()>0) {
+			long bno = bdto.getBvo().getBno();
+			for(FileVO fvo : bdto.getFlist()) {
+				fvo.setBno(bno);
+				isOk *= fileMapper.insertFile(fvo);
+			}
+		}
+		return isOk; 
 	}
 
 	@Override
