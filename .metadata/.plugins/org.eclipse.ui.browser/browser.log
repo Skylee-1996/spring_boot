@@ -21,3 +21,10 @@
 1월 29, 2024 13:58:46.15 ERROR: No matching issuer found
 1월 29, 2024 13:58:46.15 
 1월 29, 2024 13:58:46.15 
+
+1월 31, 2024 09:42:17.37 NEW SESSION
+1월 31, 2024 09:42:17.38 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+1월 31, 2024 09:42:43.21 [11356:8892:0131/094243.219:ERROR:CONSOLE(0)] "ReferenceError: dragEvent is not defined", source:  (0)
+1월 31, 2024 09:44:52.01 [11356:8892:0131/094452.014:ERROR:CONSOLE(0)] "ReferenceError: dragEvent is not defined", source:  (0)
+1월 31, 2024 10:56:30.74 [11356:8892:0131/105630.741:ERROR:CONSOLE(0)] "ReferenceError: dragEvent is not defined", source:  (0)
+1월 31, 2024 10:56:42.03 [11356:8892:0131/105642.037:ERROR:CONSOLE(0)] "ReferenceError: dragEvent is not defined", source:  (0)
